@@ -1,0 +1,33 @@
+#ifndef DEFINES_H
+#define DEFINES_H
+
+
+
+#define DASHBOARDSTATE_REDRAW_NONE 0
+#define DASHBOARDSTATE_REDRAW_ALL 255
+#define DASHBOARDSTATE_REDRAW_BUTTONS  1
+#define DASHBOARDSTATE_REDRAW_TEMP  2
+#define DASHBOARDSTATE_REDRAW_CONTENT 4
+#define DASHBOARDSTATE_REDRAW_ARROW 8
+#define DASHBOARDSTATE_REDRAW_CLEAR  128
+
+#define BUTTON_HEIGHT 13
+#define BUTTON_WIDTH 20
+
+#define NUM_SCREENS 6
+#define MAX_CONTENT_LINES 5
+
+#define MSTATE_CONNECTING 0
+#define MSTATE_DASHBOARD 1
+#define MSTATE_ERROR -1
+
+template <typename T, size_t N>
+inline
+size_t SizeOfArray( const T(&)[ N ] )
+{
+  return N;
+}
+
+#endif //DEFINES_H
+
+
